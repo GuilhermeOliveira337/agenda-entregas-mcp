@@ -1,0 +1,27 @@
+{
+  "name": "agenda-entregas-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP que deixa um assistente de IA consultar e agendar entregas de veículos com segurança",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "agenda-entregas-mcp": "dist/server.js"
+  }
+}
